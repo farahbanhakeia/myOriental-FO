@@ -1,0 +1,106 @@
+.container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 800px;
+    margin-top: 20%;
+  }
+  .resultat
+  {
+
+    margin-bottom: 15%;
+  }
+  
+  .container p {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #f9ebeb;
+    text-shadow: 2px 2px 4px rgb(249, 158, 158);
+  }
+  .search {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.search input[type="text"] {
+    width: calc(100% - 38px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 90%;
+}
+
+.search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 34px;
+    width: 14%;
+    margin-right: 5px;
+    padding-left: 20px;
+    background-color:rgb(251, 183, 183);;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   
+}
+.voyage-result {
+  padding: 10px;
+  margin: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.voyage-result:hover {
+  background-color: #e0e0e0;
+}
+
+.voyage-result p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.voyage-search
+{
+  color: rgb(160, 222, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+.search i {
+    position: absolute;
+    top: 50%;
+    left: 83%;
+    color: #393838;
+    transform: translate(-50%, -50%);
+}
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #faf0f0; 
+    margin-bottom: 15%;
+  }
+  
+  table th, table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  table th {
+    background-color: rgb(251, 183, 183);
+   
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: rgb(238, 247, 255);
+  }
+  
+  table tbody td {
+    vertical-align: middle;
+  }
+  

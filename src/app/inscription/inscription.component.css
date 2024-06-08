@@ -1,0 +1,209 @@
+
+.total
+{
+    width:400px ;
+    height: 740px;
+    background: transparent ;
+    backdrop-filter: blur(20px) ;
+    box-shadow: 0 0 10px   rgba(4, 167, 254, 0.858) ;
+    border-radius: 10px;
+    padding: 30px 40px ;
+    margin-left: 34%;
+    margin-top: 20%;
+}
+
+.total h1
+{
+    margin-bottom: 65px;
+    color: #242a4a;
+    text-shadow: 2px 2px 4px  rgba(255, 255, 255, 0.858);
+    font-size: 32px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.total .input-box
+{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 10px 0;
+    
+}
+.input-box input
+{
+    border: 1px solid ;
+    border-radius: 20px;
+    color: rgba(2, 22, 93, 0.911);
+    font-size: 12px;
+    width: 90%;
+    height: 15%;
+    background-color:white;
+    padding: 10px;
+    
+}
+.input-box input:focus
+{
+    outline: none;
+    border-color: #001238;
+    box-shadow: 0 0 5px #007bff;
+    
+}
+.total .input-box label
+{
+    
+    display: block;
+    color: rgb(134, 182, 246);
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+.input-box i
+{
+    position: absolute;
+    right: 41px;
+    top:50% ;
+    transform: translateY(-50%);
+    font-size: 15px;
+
+}
+.total .btn
+{   width: 100%;
+    height: 45px;
+    background: #242a4a;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,-1);
+    cursor: pointer;
+    font-size: 16px;
+    color:#fff;
+    font-weight: 600;
+}
+
+.total .btn:hover {
+    background-color:rgb(181, 192, 208); 
+}
+.birthday
+{ margin: 10px 0;
+}
+.total .birthday label
+{
+    display: block;
+    color: rgba(19, 19, 19, 0.911);
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+.birthday label
+{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12x;
+    
+}
+.birthday input[type="date"]
+{
+    width: 95%;
+    height:10%;
+    padding: 10px;
+    border: 1px solid ;
+    border-radius: 10px;
+    font-size: 12px;
+    color: rgba(52, 53, 55, 0.911);
+    box-sizing: border-box;   
+}
+.conditionsystem
+{
+    margin-top: 4px;
+    
+}
+
+.conditionsystem  label 
+{
+    display: block;
+    position: relative;
+    font-size: 10px;
+    text-decoration: wavy;
+    cursor: pointer;
+    left: 23px; 
+    top: 7px;
+    color: rgb(9, 2, 28);
+    margin-bottom: 20px;
+}
+
+.conditionsystem  label a
+{
+    color: #131c86;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 10px;
+}
+    .conditionsystem input[type="checkbox"]
+{
+    position: absolute;
+    right: 87%;
+    cursor: pointer;
+   
+}
+.conditionsystem label a
+{
+    margin-left: 4px;
+    
+}
+.total .btn
+{
+    width: 91%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,-1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.total .register-link
+{
+    font-size: 10px;
+    font-weight: 800;
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 10%;
+}
+.register-link p a
+{
+    color: #130156;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline ;
+    font-weight: 900;
+    font-size: 11px;
+    text-shadow: 2px 2px 4px  rgba(255, 255, 255, 0.858);
+}
+.error-message
+{
+    color: red;
+    text-decoration: solid;
+    font-size: 10px;
+}
+#instagram
+{
+    background-color: rgb(255, 0, 0);
+}
+.error-message
+{
+  color: rgb(255, 0, 0);
+  font-size: 8px;
+  margin-top:4px ;
+  margin-right:10px;  
+  
+}
+
+
+
+
+
+
+
+    
+    
+ 
+

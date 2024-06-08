@@ -1,0 +1,315 @@
+<div class="container">
+    <!-- Article 1 -->
+    <div class="row">
+      <h2>Navigation maritime</h2>
+      <div class="paragraph-container">
+        <p>
+          La navigation maritime concerne toutes les activités humaines de circulation sur les mers et océans. On
+          parle de navigation hauturière lorsque le navire navigue en haute mer et de navigation côtière lorsqu'il
+          navigue en vue des côtes. 
+        </p>
+      <div *ngIf="articleVisible" id="articleContent">
+          <!--  technique de Navigation Hauturière: -->
+        <h3>Navigation Hauturière:</h3>
+        <ul>
+             <li>
+              La navigation hauturière concerne les voyages en haute mer, loin des côtes.
+             </li>         
+              <li>
+                Les navires effectuant des traversées transocéaniques ou des trajets à travers de vastes étendues d'eau entrent dans cette catégorie.
+              </li>
+          <li>
+            Les défis de la navigation hauturière incluent la gestion des longues distances, la planification minutieuse des routes pour éviter<br>
+             les tempêtes et les dangers potentiels, ainsi que la navigation en fonction des étoiles et des instruments de bord en l'absence de repères terrestres.
+          </li>
+        
+        </ul>
+  <!--  technique de Navigation  Côtière: -->
+        <h3 >Navigation  Côtière:</h3>
+        <ul>
+             <li>
+              La navigation côtière concerne les déplacements le long des côtes, où les navires restent généralement en vue de la terre.
+             </li>         
+              <li>
+                Cela peut inclure la navigation dans des eaux plus proches des terres, où les conditions peuvent être plus changeantes en <br>raison de la proximité des côtes et des obstacles tels que les récifs et les bancs de sable.
+              </li>
+          <li>
+            Les navires effectuant des voyages entre des ports voisins ou des activités telles que la pêche côtière font partie de la navigation côtière.
+          </li>
+        </ul>
+        <!-- technique de navigation-->
+        <h3>Technique de Navigation:</h3>
+        
+        <p>La navigation maritime, qu'elle soit côtière ou hauturière, repose sur un ensemble de techniques et d'outils essentiels pour permettre au navigateur de guider le navire en toute sécurité vers sa destination.<br>
+           Voici quelques-unes des principales techniques de navigation utilisées :</p>
+        <ul>
+             <li>
+                 <h3> Utilisation des Cartes Marines :</h3>
+                 <img src="assets/images/carte_marine.jpg">
+                 <br>
+              Les cartes marines sont des représentations détaillées des zones maritimes, indiquant les profondeurs, les dangers, les aides à la navigation, les courants et d'autres caractéristiques importantes.<br>
+              Les navigateurs utilisent ces cartes pour planifier leurs routes, éviter les obstacles et trouver des points de repère.
+              <li>
+                <h3>Compas Magnétique :</h3>
+                <img src="assets/images/compas_magnetique.JPG">
+                <br>
+                 Le compas magnétique est un instrument essentiel qui indique la direction du nord magnétique. Il est utilisé pour déterminer le cap du navire.<br>
+                 Les navigateurs doivent régulièrement corriger le compas en tenant compte de la déviation magnétique causée par les métaux présents à bord du navire.<br>
+               </li>
+          <li>
+             <h3>Navigation à l'Estime :</h3> 
+             La navigation à l'estime implique l'estimation de la position actuelle du navire en fonction de sa vitesse, de son cap et du temps écoulé depuis la dernière<br>
+              position connue.
+             Bien que moins précise que d'autres méthodes, elle reste importante, surtout en l'absence de repères visuels ou lorsque les instruments de navigation font défaut.     <br>  
+              </li>
+
+              <li>
+                <h3>Navigation par GPS :</h3>
+                <img src="assets/images/gps.PNG">
+                <br>
+                Les systèmes de positionnement global (GPS) fournissent des coordonnées précises pour déterminer la position exacte du navire.<br>
+                Cela permet aux navigateurs de suivre leur position en temps réel et de planifier des routes précises.<br>
+              </li>
+              <li>
+                <h3>Radiogoniométrie :</h3>
+                <img src="assets/images/radar.PNG">
+                <br>
+                <img src="assets/images/radar2.PNG">
+                <br>
+                La radiogoniométrie est l'utilisation de signaux radio pour déterminer la direction d'une source, comme une balise radio ou un autre navire.<br>
+                Cela peut être utile pour confirmer la position du navire ou pour localiser des points de repère radio.<br>
+              </li>
+              <li> <h3>Observation des Étoiles et des Astres :</h3>
+                Historiquement, les navigateurs utilisaient les étoiles, le soleil et la lune pour déterminer leur position en mer.<br>
+                Bien que moins courante de nos jours grâce à la technologie moderne, cette méthode reste importante comme sauvegarde en cas de défaillance des équipements électroniques.<br>
+              </li>
+        </ul>
+      
+      </div>
+      <button (click)="toggleArticle()">Lire la suite</button>
+    </div>
+    </div>
+    <!-- Article 2 -->
+    <div class="row">
+      <h2>le rôle de la navigation maritime</h2>
+      <div class="paragraph-container">
+        <p>
+          La navigation maritime est cruciale à plusieurs niveaux :
+          Commerce international: Elle assure le transport de la majorité du commerce mondial, favorisant les échanges économiques.
+          Impact économique: Créant des emplois et facilitant la croissance économique grâce à la connectivité des marchés mondiaux.
+          Transport de matières premières: Essentielle pour le transport de ressources telles que le pétrole, les minerais, etc.
+          Sécurité nationale: Utilisée par les marines nationales pour la surveillance des frontières maritimes et la défense des intérêts nationaux.
+          Recherche scientifique: Utilisée pour explorer les océans et étudier divers domaines scientifiques, contribuant à la préservation des écosystèmes marins.
+          Tourisme et loisirs: Offre des opportunités touristiques diverses, du tourisme de croisière à l'observation de la faune marine.
+          Connectivité mondiale: Relie les continents et facilite les échanges culturels, sociaux et politiques à l'échelle mondiale.
+        </p>
+        <div *ngIf="articleVisible" id="articleContent">
+    
+  <!-- impotance de la navigation : -->
+        <p>la navigation maritime revêt une importance cruciale dans divers domaines, chacun ayant un impact significatif sur l'économie mondiale, la sécurité nationale,<br>
+          la recherche scientifique, le tourisme et la connectivité mondiale :</p>
+          <ul>
+            <li>
+              <h3>Commerce International :</h3>
+              La navigation maritime est le principal mode de transport pour le commerce international, facilitant le déplacement de marchandises à travers les océans du monde.<br>
+              Elle permet le transport efficace et économique de marchandises en vrac telles que le pétrole, les minéraux, les produits agricoles, les produits manufacturés, etc.<br>
+              Son importance réside dans sa capacité à relier les marchés mondiaux, favorisant ainsi les échanges économiques et la croissance du commerce international<br>
+            </li>
+            <li>
+              <h3>Impact Économique :</h3>
+              La navigation maritime crée des emplois dans divers secteurs, notamment la navigation, la logistique, la construction navale, l'entretien des ports, etc.<br>
+              Elle stimule la croissance économique en facilitant l'accès aux marchés mondiaux, en favorisant le développement des infrastructures portuaires et en soutenant les industries connexes.<br>
+
+
+            </li>
+            <li>
+              <h3>Transport de Matières Premières :</h3>
+              La navigation maritime est essentielle pour le transport de matières premières telles que le pétrole brut, le gaz naturel, les minerais, les produits agricoles, etc.<br>
+              Elle permet d'acheminer ces ressources des zones de production aux centres de consommation à travers le monde, jouant ainsi un rôle crucial dans les chaînes d'approvisionnement mondiales.<br>
+
+            </li>
+            <li>
+              <h3>Sécurité Nationale :</h3>
+              Les marines nationales utilisent la navigation maritime pour surveiller les frontières maritimes, protéger les voies navigables stratégiques et défendre les intérêts nationaux.<br>
+              Elle contribue à la sécurité nationale en permettant le contrôle des activités illicites telles que la piraterie, le trafic de drogue et le terrorisme maritime.<br>
+            </li>
+            <li>
+              <h3>Recherche Scientifique :</h3>
+              La navigation maritime est indispensable pour la recherche scientifique en permettant l'accès aux océans et en facilitant l'exploration et l'étude des écosystèmes marins, de la météorologie,<br>
+               de la géologie marine, etc.<br>
+               Elle contribue à la préservation des écosystèmes marins en permettant la collecte de données cruciales pour la conservation et la gestion durable des ressources océaniques.
+              <br>
+            </li>
+            <li>
+              <h3>Tourisme et Loisirs :</h3>
+              La navigation maritime offre une gamme d'opportunités touristiques, du tourisme de croisière aux activités telles que la plongée sous-marine, l'observation de la faune marine, etc.<br>
+              Elle contribue au développement économique des régions côtières en attirant les touristes et en stimulant les industries du tourisme et de l'hospitalité.<br>
+            </li>
+            <li><h3>Connectivité Mondiale :</h3>
+              La navigation maritime relie les continents et facilite les échanges culturels, sociaux et politiques à l'échelle mondiale.<br>
+              Elle favorise la connectivité mondiale en permettant le transport de personnes, de biens et d'idées à travers les océans, jouant ainsi un rôle crucial dans la mondialisation.<br>
+            </li>
+          </ul>
+      </div>
+      <button (click)="toggleArticle()">Lire la suite</button>
+    </div>
+    </div>
+  
+
+    <!-- Article 4 -->
+    <div class="row">
+      <h2>Les ports qui existent au Maroc</h2>
+      <div class="paragraph-container">
+        <p>
+          Les ports marocains, dont Tanger-Med, Casablanca, Jorf Lasfar, Agadir, Nador, Mohammedia et Safi,jouent un rôle crucial dans l'économie nationale.<br>
+           Tanger-Med, classé parmi les plus grands d'Afrique,est un maillon vital dans les échanges entre l'Europe et l'Afrique. Casablanca se distingue par son volume <br>
+           de trafic de marchandises, tandis que d'autres ports comme Jorf Lasfar, Agadir et Nador se spécialisent respectivement dans les phosphates, les produits de la <br>
+           mer et les produits pétroliers. Ces infrastructures portuaires sont des moteurs essentiels des échanges commerciaux, soutenant ainsi le développement économique du Maroc.<br>
+
+        </p>
+        <div *ngIf="articleVisible" id="articleContent">
+    
+          <!-- impotance de la navigation : -->
+            <p> Quelsue iformation supplémentaires</p>    
+            <ul>
+              <li>
+                <h3>Tanger-Med :</h3>
+                Année de construction : Ouvert en 2007.<br>
+                Chiffre d'affaires : Tanger-Med est l'un des plus grands ports d'Afrique et a connu une croissance significative <br>
+                   depuis son ouverture. Il est difficile de fournir un chiffre d'affaires spécifique, mais il est connu pour traiter une grande<br>
+                    partie du commerce entre l'Europe et l'Afrique, avec un trafic diversifié de conteneurs, de véhicules, de produits manufacturés <br>
+                    et d'autres marchandises.
+              </li>
+              <li>
+                <h3>Casablanca :</h3>
+                Année de construction : Le port de Casablanca est l'un des plus anciens du Maroc, remontant à la période coloniale française.<br>
+                 Il a été modernisé et agrandi à plusieurs reprises depuis lors.<br>
+                 Chiffre d'affaires : Casablanca est le plus grand port en termes de trafic de marchandises au Maroc, mais un chiffre d'affaires <br>
+                 précis n'est pas facilement disponible. Il traite une grande variété de marchandises, y compris des conteneurs, des produits manufacturés,<br>
+                  des matières premières et des produits agricoles.
+              </li>
+              <li>
+                <h3>Jorf Lasfar :</h3>
+                Année de construction : La construction du port de Jorf Lasfar a commencé dans les années 1970 pour soutenir l'industrie <br>
+                des phosphates dans la région.<br>
+                Chiffre d'affaires : Jorf Lasfar est spécialisé dans l'exportation de phosphates et de produits chimiques associés. Les chiffres précis de <br>
+                son chiffre d'affaires sont généralement liés aux activités de l'industrie des phosphates au Maroc.<br>
+              </li>
+              <li>
+                <h3>Agadir :</h3>
+                Année de construction : Le port d'Agadir existe depuis plusieurs décennies, mais il a été modernisé et étendu au fil des ans.<br>
+                Chiffre d'affaires : Agadir est un port important pour l'exportation de produits de la mer, y compris le poisson frais et les fruits<br>
+                 de mer transformés. Ses revenus sont liés aux activités de pêche et de transformation des produits de la mer dans la région.<br>
+              </li>
+              <li>
+                <h3>Nador :</h3>
+                Année de construction : Le port de Nador a été construit et développé au fil des ans pour répondre aux besoins croissants du commerce maritime dans la région.<br>
+                Chiffre d'affaires : Nador est spécialisé dans le transport de marchandises diverses, y compris les produits pétroliers, les conteneurs et d'autres cargaisons.<br>
+                 Son chiffre d'affaires dépend des activités commerciales dans la région et des marchandises spécifiques traitées dans le port.<br>
+              </li>
+              <li>
+                <h3>Mohammedia :</h3>
+                Année de construction : Mohammedia est un port relativement récent, construit dans les années 1920 pour soutenir l'industrie pétrochimique émergente de la région.<br>
+                Chiffre d'affaires : Le port de Mohammedia est principalement impliqué dans le transport de produits pétroliers, y compris les produits raffinés et les produits chimiques.<br>
+                 Ses revenus sont liés aux activités de l'industrie pétrochimique et au commerce de produits pétroliers dans la région.
+              </li>
+              
+              <li>
+                <h3>Safi :</h3>
+                Année de construction : Le port de Safi a été construit dans les années 1960 pour soutenir les activités industrielles et commerciales dans la région.<br>
+                Chiffre d'affaires : Safi est un port polyvalent, traitant une variété de marchandises, y compris les produits céréaliers, les phosphates, les produits pétroliers<br>
+                 et les marchandises diverses. Son chiffre d'affaires dépend des activités économiques dans la région et des marchandises traitées dans le port.
+              </li>
+            </ul>
+            
+              </div>
+              <button (click)="toggleArticle()">Lire la suite</button>
+            </div>
+            </div>
+          
+        
+  
+    <!-- Article 4-->
+    <div class="row">
+      <h2>Les défis auxquels les gens sont confrontés dans le domaine maritime</h2>
+      <div class="paragraph-container">
+        <p>
+          Les professionnels du maritime font face à divers défis sont : 
+          notamment la sécurité en mer avec des conditions météorologiques 
+          imprévisibles et des actes de piraterie, l'isolement et la réglementation complexe. 
+          L'adoption de nouvelles technologies et l'automatisation exigent une adaptation 
+          tandis que la gestion des ressources humaines et les pressions économiques posent également des défis.
+          De plus, la durabilité environnementale nécessite des efforts pour réduire les émissions et protéger la biodiversité marine. 
+          Une collaboration entre les gouvernements, l'industrie et les marins est essentielle pour relever ces défis.
+        </p>
+        <div *ngIf="articleVisible" id="articleContent">
+          <p>  une analyse approfondie de ces défis</p>
+           <ul>
+            <li>
+              <h3>Sécurité en mer :</h3>
+              Les conditions météorologiques imprévisibles, telles que les tempêtes, les vents forts et les vagues violentes, <br>
+              constituent une menace constante pour la sécurité des navires et de leur équipage.<br>
+              Les actes de piraterie dans certaines régions du monde représentent un danger supplémentaire pour la navigation maritime,<br>
+               mettant en péril la vie des marins et la sécurité des marchandises transportées.<br>
+            </li>
+            <li>
+              <h3>Isolation et Réglementation Complexes :</h3>
+              Les voyages en mer peuvent entraîner un sentiment d'isolement pour l'équipage, avec des périodes prolongées <br>
+              loin de leur famille et de leurs proches.<br>
+              La réglementation maritime est complexe et en constante évolution, ce qui exige une conformité stricte de la <br>
+              part des professionnels du secteur, ce qui peut être difficile à gérer.<br>
+
+            </li>
+            <li>
+              <h3>Adoption de Nouvelles Technologies et Automatisation :</h3>
+              L'industrie maritime évolue rapidement avec l'adoption de nouvelles technologies et l'automatisation des processus.<br>
+               Cela nécessite une adaptation constante de la part des professionnels du secteur pour rester compétitifs et efficaces.<br>
+            </li>
+            <li>
+              <h3>Gestion des Ressources Humaines et Pressions Économiques :</h3>
+              La gestion des ressources humaines à bord des navires, y compris le recrutement, la formation et le maintien du bien-être<br>
+               de l'équipage, est un défi majeur.<br>
+               Les pressions économiques, telles que la concurrence accrue, les fluctuations des prix du carburant et les coûts de conformité<br>
+                réglementaire, peuvent mettre à rude épreuve la rentabilité des opérations maritimes.<br>
+            </li>
+            <li>
+              <h3>Durabilité Environnementale :</h3>
+              La durabilité environnementale est devenue une préoccupation majeure pour l'industrie maritime, avec des efforts visant à réduire <br>
+               les émissions de gaz à effet de serre, à minimiser la pollution marine et à protéger la biodiversité.<br>
+               L'adoption de pratiques respectueuses de l'environnement et de technologies propres représente un défi important pour l'industrie,<br>
+                nécessitant des investissements et des changements dans les modes opératoires traditionnels.<br>
+            </li>
+           </ul>
+      </div>
+      <button (click)="toggleArticle()">Lire la suite</button>
+    </div>
+    </div>
+  
+    <!-- Article 6 -->
+    <div class="row">
+      <h2>Le calcul de l'itinéraire en mer</h2>
+      <div class="paragraph-container">
+        <p>
+          Le calcul de routes en mer diffère considérablement de celui sur terre en raison 
+          des caractéristiques uniques de l'environnement marin. 
+          Les navigateurs doivent tenir compte des courants marins, des marées, de la profondeur de l'eau 
+          de la navigation astronomique, des conditions météorologiques imprévisibles et des réglementations maritimes. 
+          Cette planification exige une expertise spécialisée et l'utilisation d'outils de navigation 
+          adaptés pour assurer des voyages sûrs et efficaces en mer.
+        </p>
+        <div *ngIf="articleVisible" id="articleContent">
+          <ul>
+            <li>
+              <h3>Alors comment calculer la route et la distance  en maritime?</h3>
+              <img src="assets/images/route.PNG" >
+              <br>
+            </li>
+          </ul>
+
+        </div>
+        <button (click)="toggleArticle()">Lire la suite</button>
+      </div>
+      </div>
+      </div>
+  
+

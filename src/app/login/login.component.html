@@ -1,0 +1,35 @@
+
+<div class="wrapper">
+  <form    id="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <h1> Login</h1>
+       <div class="input-box">
+          <input for="email"  id="email"  type="email"
+           placeholder="Saisir votre Mail" formControlName="email">
+          <span class="error-message" *ngIf="email && email.invalid && email.touched">Email Is Not Invalible </span>
+           <i class='bx bx-user'></i>
+          </div>
+           <div class="input-box">
+             <input type="password"
+             placeholder="Password"  id="input" formControlName="password">
+             <span class="error-message" *ngIf="password && password.invalid && password.touched">Password Is Not Invalible </span>
+
+             <span class="eye" >
+              <i  id="hide1" class="ri-eye-fill"></i>
+              <i   id="hide2" class="ri-eye-close-fill" ></i>
+              </span>
+          </div>
+           <div class="remember-forgot">
+                 <label>
+                  <input type="checkbox">Remember me
+                 </label>
+                 <a href="#">Forget  password?</a>
+           </div>
+           <button type="submit" class="btn">Sing in</button>
+           <div class="register-link">
+              <p> Don't have an account? <a routerLink="/register" routerLinkActive="active"  >s'inscrire</a></p>
+
+           </div>
+  </form>
+
+</div>
+

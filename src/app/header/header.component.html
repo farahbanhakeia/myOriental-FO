@@ -1,0 +1,36 @@
+
+    <head>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <header>
+        <div class="container">
+            <nav >
+               <span class="nomapp" routerLink="" routerLinkActive="active">NauticalMarine</span>
+                <ul>
+                <li><a routerLink="" routerLinkActive="active">Acceuil
+                    <i class='bx bxs-home-circle'></i>
+                </a>
+                </li>
+                <li><a routerLink="service" routerLinkActive="active">Service
+                    <i class='bx bx-align-left'></i>
+                </a>
+                </li>
+                <li><a routerLink="/help" routerLinkActive="active">Aidez-moi
+                    <i class='bx bx-help-circle'></i>
+                </a>
+                </li>
+                <li><a routerLink="register" routerLinkActive="active">
+                    <i class='bx bxs-log-in'></i>
+                    Register
+                    <i class='bx bxs-log-out'></i>
+                </a>
+                </li>
+                <li *ngIf="!isLoggedIn">
+                  <button (click)="logout()">logout</button>
+
+              </li>
+            </ul>
+            </nav>
+            </div>
+        </header>

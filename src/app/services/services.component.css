@@ -1,0 +1,90 @@
+
+.container{
+  
+  margin-bottom:-30%;
+  margin-top: 10%;
+}
+
+
+.container .services{
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.container .services .card{
+  width: 300px;
+  height: 150px;
+  text-align: center;
+  background: rgb(24, 4, 79);
+  padding: 20px 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container .services .card:hover{
+  background: rgb(198, 131, 215);
+}
+
+.container .services .card .content{
+  transition: 0.3s;
+}
+
+.container .services .card:hover .content{
+  transform: scale(1.07);
+}
+
+.container .services .card .content .icon{
+  padding: 5px 0;
+  color: white;
+}
+
+.container .services .card .content .icon i{
+  font-size: 25px;
+}
+
+.container .services .card:hover .content .title{
+  color: white;
+}
+
+.container .services .card .content .title a{
+  padding: 5px 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+.container .services .card p
+{
+  color: rgb(183, 201, 242);
+}
+@media(max-width: 768px) {
+  .container {
+    margin-bottom: 30%; 
+  }
+
+  .container h2 {
+    font-size: 35px; 
+  }
+  .container .services  {
+    margin-bottom: 10%;
+  }
+
+  .container .services .card {
+    width: 45%; 
+    height: 120px; 
+    padding: 15px; 
+  }
+
+  .container .services .card .content .icon i {
+    font-size: 20px; 
+  }
+
+  .container .services .card .content .title a {
+    font-size: 18px; 
+  }
+}

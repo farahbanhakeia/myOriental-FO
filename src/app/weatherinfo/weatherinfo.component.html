@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="weather-card">
+        <div class="input-group mb-3">
+            <input type="text" value="{{cityName}}" [(ngModel)]="cityName"
+             class="font-control search-input" placeholder="entrer le nom">
+            <button class="btn btn-primary search-btn"
+            (click)="loadData()" > Search</button>
+        </div>
+        <div class="weather-info">
+            <img src="https://openweathermap.org/img/wn/{{data.imageURL}}@2x.png" alt="weather-image "/>
+            <div class="temperature">
+               {{data.temp}}°C 
+            </div>
+            <div class="description">{{data.main}}</div>
+        </div>
+        <div class="addition-info">
+            <div class="info-item">
+                <span class="item1">Feels Like: </span>
+                <span class="item2">{{ data.feelsLike }} °C</span>
+            </div>
+            <div class="info-item">
+                <span class="item1">Pressure: </span>
+                <span class="item2">{{data.pressure}} hPa</span>
+            </div>
+            <div class="info-item">
+                <span class="item1">Humidity: </span>
+                <span class="item2">{{data.humidity}}%</span>
+            </div>
+            <div class="info-item">
+                <span class="item1">City: </span>
+                <span class="item2">{{data.city}}</span>
+            </div>
+        </div>
+    </div>
+</div>

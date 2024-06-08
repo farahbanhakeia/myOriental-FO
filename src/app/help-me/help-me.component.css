@@ -1,0 +1,54 @@
+/* Style pour le conteneur principal */
+.help-page {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(245, 238, 230);  
+    border-radius: 10px;
+    margin-top: 15%;  
+}
+h1
+{
+    margin-top: 5%;
+    font-size:45px;
+    color:rgb(69, 63, 120);
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+h2{
+    font-size: 24px;
+    color: rgb(210, 0, 98);
+    margin-top: 20px;
+}
+h3{
+    font-size: 20px;
+    color: rgb(56, 122, 223); 
+    margin-top: 20px;
+}
+
+
+ul {
+    list-style-type:circle;
+    padding-left: 20px;
+}
+ul a {
+    color: rgb(251, 154, 209); 
+}
+
+p {
+    font-size: 20px;
+    color: rgb(49, 54, 63); 
+    font-style: oblique;
+    text-decoration: solid;
+    margin-bottom: 10%;
+}
+
+ul li a {
+    color:rgb(251, 154, 209); 
+}
+
+
+a:visited {
+    color: #800080; 
+}

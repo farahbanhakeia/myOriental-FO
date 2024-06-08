@@ -1,0 +1,878 @@
+<div class="container">
+ <div class="resultat">
+    <div class="search">
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher un voyage"> <i class="fa-solid fa-magnifying-glass"></i>
+        <button (click)="searchVoyage()">Rechercher</button>
+      </div>
+    
+      <div *ngFor="let result of searchResult" class="voyage-result" (click)="selectVoyage(result)">
+        <p>{{ result }}</p>
+      </div>
+ </div>
+
+<div *ngIf="selectedVoyage">
+  <p>Voyage de Nador à Almeria</p>
+</div>
+<p>Voyage de Nador à Almeria</p>
+  <table border="1">
+      <thead>
+          <tr>
+              <th>WayPoints</th>
+              <th>Latitude/Longitude</th>
+              <th>Route</th>
+              <th>Distance</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td rowspan="2">1</td>
+              <td>35°16.300'N</td>
+              <td rowspan="2">------------</td>
+              <td rowspan="2">------------</td>
+          </tr>
+          <tr>
+              <td>002°55.480W</td>
+          </tr>
+          <tr>
+            <td rowspan="2">2</td>
+            <td>35°16.390'N</td>
+            <td rowspan="2">051.9°</td>
+            <td rowspan="2">0.06NM</td>
+        </tr>
+        <tr>
+            <td>002°55.340W</td>
+        </tr>
+        <tr>
+          <td rowspan="2">3</td>
+          <td>35°16.550'N</td>
+          <td rowspan="2">330.6°</td>
+          <td rowspan="2">0.19NM</td>
+      </tr>
+      <tr>
+          <td>002°55.450W</td>
+      </tr>
+          <tr>
+      <td rowspan="2">4</td>
+      <td>35°17.600'N</td>
+      <td rowspan="2">022.5°</td>
+      <td rowspan="2">1.17NM</td>
+  </tr>
+  <tr>
+      <td>002°54.920W</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">5</td>
+    <td>36°48.110'N</td>
+    <td rowspan="2">013.9°</td>
+    <td rowspan="2">93.08NM</td>
+</tr>
+<tr>
+    <td>002°27.400W</td>
+</tr>
+<tr>
+  <td rowspan="2">6</td>
+  <td>36°49.458'N</td>
+  <td rowspan="2">355.2°</td>
+  <td rowspan="2">1.32NM</td>
+</tr>
+<tr>
+  <td>002°27.540W</td>
+</tr>
+<tr>
+<td rowspan="2">7</td>
+<td>36°49.996'N</td>
+<td rowspan="2">309.4°</td>
+<td rowspan="2">0.88NM</td>
+</tr>
+<tr>
+<td>002°28.355W</td>
+</tr>
+</tbody>
+  </table>
+
+<!---------la deuxième tableau de Almeria à Nador -->
+<div *ngIf="selectedVoyage">
+<p>Voyage de Almeria à Nador</p>
+</div>
+<p>Voyage de Almeria à Nador</p>
+  <table border="1">
+      <thead>
+          <tr>
+              <th>WayPoints</th>
+              <th>Latitude/Longitude</th>
+              <th>Route</th>
+              <th>Distance</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td rowspan="2">1</td>
+              <td>36°49.996'N</td>
+              <td rowspan="2">------------</td>
+              <td rowspan="2">------------</td>
+          </tr>
+          <tr>
+              <td>002°28.355'W</td>
+          </tr>
+          <tr>
+            <td rowspan="2">2</td>
+            <td>36°49.458'N</td>
+            <td rowspan="2">129.4°</td>
+            <td rowspan="2">0.80NM</td>
+        </tr>
+        <tr>
+            <td>002°27.540'W</td>
+        </tr>
+        <tr>
+          <td rowspan="2">3</td>
+          <td>36°48.110'N</td>
+          <td rowspan="2">175.2°</td>
+          <td rowspan="2">1.37NM</td>
+      </tr>
+      <tr>
+          <td>002°27.400W</td>
+      </tr>
+    <tr>
+      <td rowspan="2">4</td>
+      <td>35°17.600'N</td>
+      <td rowspan="2">193.9°</td>
+      <td rowspan="2">93.10NM</td>
+  </tr>
+  <tr>
+      <td>002°54.920W</td>
+  </tr>
+  <tr>
+    <td rowspan="2">5</td>
+    <td>35°16.550'N</td>
+    <td rowspan="2">202.5°</td>
+    <td rowspan="2">1.09NM</td>
+</tr>
+<tr>
+    <td>002°55.450W</td>
+</tr>
+<tr>
+  <td rowspan="2">6</td>
+  <td>35°16.390'N</td>
+  <td rowspan="2">150.6°</td>
+  <td rowspan="2">0.14NM</td>
+</tr>
+<tr>
+  <td>002°55.340W</td>
+</tr>
+
+<tr>
+<td rowspan="2">7</td>
+<td>35°16.300'N</td>
+<td rowspan="2">231.9°</td>
+<td rowspan="2">0.20NM</td>
+</tr>
+<tr>
+<td>002°55.480W</td>
+</tr>
+</tbody>
+  </table>
+
+<!--Voyage de Danmark à Jorf Asfar asafi -->
+<div *ngIf="selectedVoyage">
+<p>Voyage de Danmark (ALLBORG) à JorfLasfar</p>
+</div>
+<p>Voyage de Danmark (ALLBORG) à JorfLasfar</p>
+<table border="1">
+  <thead>
+      <tr>
+          <th>WayPoints</th>
+          <th>Latitude/Longitude</th>
+          <th>Route</th>
+          <th>Distance</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td rowspan="2">1</td>
+          <td>56°51'N</td>
+          <td rowspan="2">091°</td>
+          <td rowspan="2">13'</td>
+      </tr>
+      <tr>
+          <td>11°12'E</td>
+      </tr>
+      <tr>
+        <td rowspan="2">2</td>
+        <td>56°51,3'N</td>
+        <td rowspan="2">089°</td>
+        <td rowspan="2">20'.3</td>
+    </tr>
+    <tr>
+        <td>11°49.5'E</td>
+    </tr>
+    <tr>
+      <td rowspan="2"> 3</td>
+      <td>35°16.550'N</td>
+      <td rowspan="2">330.6°</td>
+      <td rowspan="2">0.19NM</td>
+  </tr>
+  <tr>
+      <td>002°55.450W</td>
+  </tr>
+<tr>
+  <td rowspan="2"> 4</td>
+  <td>57°28'N</td>
+  <td rowspan="2">340°</td>
+  <td rowspan="2">39'</td>
+</tr>
+<tr>
+  <td>11°25.2E</td>
+</tr>
+<tr>
+<td rowspan="2"> 5</td>
+<td>57°53.5'N</td>
+<td rowspan="2">327°</td>
+<td rowspan="2">30'.3</td>
+</tr>
+<tr>
+<td>10°54'E</td>
+</tr>
+<tr>
+<td rowspan="2"> 6</td>
+<td>57°53.5'N</td>
+<td rowspan="2">270°</td>
+<td rowspan="2">29'</td>
+</tr>
+<tr>
+<td>10°</td>
+</tr>
+<tr>
+<td rowspan="2">7</td>
+<td>57°40'N</td>
+<td rowspan="2">247.2°</td>
+<td rowspan="2">35'</td>
+</tr>
+<tr>
+<td>009°00'E</td>
+</tr>
+<tr>
+<td rowspan="2">8</td>
+<td>57°00'N</td>
+<td rowspan="2">238,2°</td>
+<td rowspan="2">76'</td>
+</tr>
+<tr>
+<td>007°00'E</td>
+</tr>
+<tr>
+<td rowspan="2">9</td>
+<td>55°41,9'N</td>
+<td rowspan="2">232°</td>
+<td rowspan="2">127'</td>
+</tr>
+<tr>
+<td>004°00'E</td>
+</tr>
+<tr>
+<td rowspan="2">10</td>
+<td>54°10'N</td>
+<td rowspan="2">175.7°</td>
+<td rowspan="2">92.2'</td>
+</tr>
+<tr>
+<td>004°12'E</td>
+</tr>
+<tr>
+<td rowspan="2">11</td>
+<td>53°57'N</td>
+<td rowspan="2">180°</td>
+<td rowspan="2">12.9'</td>
+</tr>
+<tr>
+<td>004°12'E</td>
+</tr>
+<tr>
+<td rowspan="2">12</td>
+<td>53°43'N</td>
+<td rowspan="2">233°</td>
+<td rowspan="2">23.5'</td>
+</tr>
+<tr>
+<td>003°40.5'E</td>
+</tr>
+<tr>
+<td rowspan="2"> 13</td>
+<td>52°55.6'N</td>
+<td rowspan="2">197°</td>
+<td rowspan="2">49'</td>
+</tr>
+<tr>
+<td>003°16'E</td>
+</tr>
+<tr>
+<td rowspan="2">14</td>
+<td>52°12'N</td>
+<td rowspan="2">207.4°</td>
+<td rowspan="2">49'</td>
+</tr>
+<tr>
+<td>002°38.8'E</td>
+</tr>
+<tr>
+<td rowspan="2">14</td>
+<td>51°55.5'N</td>
+<td rowspan="2">309.4°</td>
+<td rowspan="2">0.88NM</td>
+</tr>
+<tr>
+<td>002°37.5'E</td>
+</tr>
+</tbody>
+</table>
+<!---------Port saiid => Barcelone -->
+<div *ngIf="selectedVoyage">
+    <p>Voyage de Port saiid à Barcelone</p>
+    </div>
+    <p>Voyage de Port saiid à Barcelone</p>
+      <table border="1">
+          <thead>
+              <tr>
+                  <th>WayPoints</th>
+                  <th>Latitude/Longitude</th>
+                  <th>Route</th>
+                  <th>Distance</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Sortie chenal</td>
+                <td>--------------</td>
+                <td>--------------</td>
+                <td>--------------</td>
+                
+            </tr>
+              <tr>
+                  <td rowspan="2">1</td>
+                  <td>32°00.00'N</td>
+                  <td rowspan="2">329°</td>
+                  <td rowspan="2">40,4NM</td>
+              </tr>
+              <tr>
+                  <td>032°00.00'E</td>
+              </tr>
+              <tr>
+                <td rowspan="2">2</td>
+                <td>37°16'N</td>
+                <td rowspan="2">287°</td>
+                <td rowspan="2">1083,1NM</td>
+            </tr>
+            <tr>
+                <td>011°00'E</td>
+            </tr>
+            <tr>
+              <td rowspan="2">3</td>
+              <td>41°19.18'N</td>
+              <td rowspan="2">300.7°</td>
+              <td rowspan="2">476,4NM</td>
+          </tr>
+          <tr>
+              <td>002°10.43'E</td>
+          </tr>
+     
+    </tbody>
+      </table>
+
+
+      <!--Visha=> Haldia-->
+    <div *ngIf="selectedVoyage">
+        <p>Voyage de Visha à Haldia</p>
+        </div>
+        <p>Voyage de Visha à Haldia</p>
+          <table border="1">
+              <thead>
+                  <tr>
+                      <th>WayPoints</th>
+                      <th>Latitude/Longitude</th>
+                      <th>Route</th>
+                      <th>Distance</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td >0</td>
+                    <td>Visha</td>
+                    <td rowspan="2">------------</td>
+                    <td rowspan="2">------------</td>
+                </tr>
+              
+                <tr>
+                  <tr>
+                      <td rowspan="2">1</td>
+                      <td>17°41'N</td>
+                      <td rowspan="2">86°</td>
+                      <td rowspan="2">10NM</td>
+                  </tr>
+                  <tr>
+                      <td>083°30'E</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">2</td>
+                    <td>20°00'N</td>
+                    <td rowspan="2">53,3°</td>
+                    <td rowspan="2">232,5NM</td>
+                </tr>
+                <tr>
+                    <td>086°47'E</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Haldia</td>
+                  <td rowspan="2">56,5°</td>
+                  <td rowspan="2">98NM</td>
+              </tr>
+             
+        </tbody>
+          </table>
+<!--Couchin => Karachi-->
+    <div *ngIf="selectedVoyage">
+    <p>Voyage de Couchin à Karachi</p>
+    </div>
+    <p>Voyage de Couchin à Karachi</p>
+      <table border="1">
+          <thead>
+              <tr>
+                  <th>WayPoints</th>
+                  <th>Latitude/Longitude</th>
+                  <th>Route</th>
+                  <th>Distance</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td rowspan="2">0</td>
+                <td>009°57.8'N</td>
+                <td rowspan="2">------------</td>
+                <td rowspan="2">------------</td>
+            </tr>
+            <tr>
+                <td>076°09'E</td>
+            </tr>
+            <tr>
+              <tr>
+                  <td rowspan="2">1</td>
+                  <td>22°20'N</td>
+                  <td rowspan="2">326,5°</td>
+                  <td rowspan="2">890,2NM</td>
+              </tr>
+              <tr>
+                  <td>067°36'E</td>
+              </tr>
+              <tr>
+                <td rowspan="2">2</td>
+                <td>24°00'N</td>
+                <td rowspan="2">338°</td>
+                <td rowspan="2">107,5NM</td>
+            </tr>
+            <tr>
+                <td>066°52,9'E</td>
+            </tr>
+            <tr>
+              <td rowspan="2">3</td>
+              <td>24°40'N</td>
+              <td rowspan="2">NORD</td>
+              <td rowspan="2">40NM</td>
+          </tr>
+          <tr>
+              <td>066°52,9'E</td>
+          </tr>
+          <tr>
+            <td rowspan="2">4</td>
+            <td>KARACHI</td>
+            <td rowspan="2">40°</td>
+            <td rowspan="2">6,3NM</td>
+        </tr>
+     
+    </tbody>
+      </table>
+
+           <!--Visha=> Haldia-->
+    <div *ngIf="selectedVoyage">
+        <p>Voyage de Visha à Haldia</p>
+        </div>
+        <p>Voyage de Visha à Haldia</p>
+          <table border="1">
+              <thead>
+                  <tr>
+                      <th>WayPoints</th>
+                      <th>Latitude/Longitude</th>
+                      <th>Route</th>
+                      <th>Distance</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td >0</td>
+                    <td>Visha</td>
+                    <td rowspan="2">------------</td>
+                    <td rowspan="2">------------</td>
+                </tr>
+              
+                <tr>
+                  <tr>
+                      <td rowspan="2">1</td>
+                      <td>17°41'N</td>
+                      <td rowspan="2">86°</td>
+                      <td rowspan="2">10NM</td>
+                  </tr>
+                  <tr>
+                      <td>083°30'E</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">2</td>
+                    <td>20°00'N</td>
+                    <td rowspan="2">53,3°</td>
+                    <td rowspan="2">232,5NM</td>
+                </tr>
+                <tr>
+                    <td>086°47'E</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Haldia</td>
+                  <td rowspan="2">56,5°</td>
+                  <td rowspan="2">98NM</td>
+              </tr>
+             
+        </tbody>
+          </table>
+<!--Paradip => Kakinada-->
+    <div *ngIf="selectedVoyage">
+    <p>Voyage de Paradip à Kakinada</p>
+    </div>
+    <p>Voyage de Paradip à Kakinada</p>
+      <table border="1">
+          <thead>
+              <tr>
+                  <th>WayPoints</th>
+                  <th>Latitude/Longitude</th>
+                  <th>Route</th>
+                  <th>Distance</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td >0</td>
+                <td>Paradip</td>
+                <td rowspan="2">------------</td>
+                <td rowspan="2">------------</td>
+            </tr>
+           
+            <tr>
+              <tr>
+                  <td rowspan="2">1</td>
+                  <td>20°11,5'N</td>
+                  <td rowspan="2">155°</td>
+                  <td rowspan="2">3,7NM</td>
+              </tr>
+              <tr>
+                  <td>086°44'E</td>
+              </tr>
+              <tr>
+                <td rowspan="2">2</td>
+                <td>19°57,5'N</td>
+                <td rowspan="2">199°</td>
+                <td rowspan="2">14,6NM</td>
+            </tr>
+            <tr>
+                <td>086°39'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">3</td>
+                <td>17°30'N</td>
+                <td rowspan="2">230,9°</td>
+                <td rowspan="2">234,1NM</td>
+            </tr>
+            <tr>
+                <td>083°27'E</td>
+            </tr>
+            <tr>
+              <td rowspan="2">4</td>
+              <td>17°00,5'N</td>
+              <td rowspan="2">244,6°</td>
+              <td rowspan="2">68,7NM</td>
+          </tr>
+          <tr>
+              <td>082°22'E</td>
+          </tr>
+          <tr>
+            <td rowspan="2">5</td>
+            <td>Entrée Chenal</td>
+            <td rowspan="2">270°</td>
+            <td rowspan="2">1,2NM</td>
+        </tr>
+     
+    </tbody>
+      </table>
+      <!-- voyage de CORK (Irland)à  ALLBORG (Danmark)-->
+      <div *ngIf="selectedVoyage">
+        <p>Voyage de CORK (Irland) à ALLBORG (Danmark)</p>
+        </div>
+        <p>Voyage de CORK (Irland) à ALLBORG (Danmark)</p>
+          <table border="1">
+              <thead>
+                  <tr>
+                      <th>WayPoints</th>
+                      <th>Latitude/Longitude</th>
+                      <th>Route</th>
+                      <th>Distance</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>Sortie chanal</td>
+                    <td>--------------</td>
+                    <td>--------------</td>
+                    <td>--------------</td>
+                    
+                </tr>
+                  <tr>
+                      <td rowspan="2">1</td>
+                      <td>51°24'N</td>
+                      <td rowspan="2">146°</td>
+                      <td rowspan="2">26NM</td>
+                  </tr>
+                  <tr>
+                      <td>007°52.00'W</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">2</td>
+                    <td>49°38'N</td>
+                    <td rowspan="2">163°</td>
+                    <td rowspan="2">110NM</td>
+                </tr>
+                <tr>
+                    <td>007°00'W</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">3</td>
+                  <td>49°38'N</td>
+                  <td rowspan="2">90°</td>
+                  <td rowspan="2">29,5NM</td>
+              </tr>
+              <tr>
+                  <td>006°15'W</td>
+              </tr>
+              <tr>
+                <td rowspan="2">4</td>
+                <td>49°48'N</td>
+                <td rowspan="2">86°</td>
+                <td rowspan="2">131NM</td>
+            </tr>
+            <tr>
+                <td>002°52'W</td>
+            </tr>
+            <tr>
+                <td rowspan="2">5</td>
+                <td>50°29'N</td>
+                <td rowspan="2">75°</td>
+                <td rowspan="2">154NM</td>
+            </tr>
+            <tr>
+                <td>001°00'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">6</td>
+                <td>50°41'N</td>
+                <td rowspan="2">48°</td>
+                <td rowspan="2">18,1NM</td>
+            </tr>
+            <tr>
+                <td>001°21'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">7</td>
+                <td>50°55'N</td>
+                <td rowspan="2">20°</td>
+                <td rowspan="2">15NM</td>
+            </tr>
+            <tr>
+                <td>001°29'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">8</td>
+                <td>51°08'N</td>
+                <td rowspan="2">41,2°</td>
+                <td rowspan="2">17,4NM</td>
+            </tr>
+            <tr>
+                <td>001°47,2'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">9</td>
+                <td>51°15'N</td>
+                <td rowspan="2">59°</td>
+                <td rowspan="2">13,8NM</td>
+            </tr>
+            <tr>
+                <td>002°6'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">10</td>
+                <td>51°27,3'N</td>
+                <td rowspan="2">18,5°</td>
+                <td rowspan="2">13NM</td>
+            </tr>
+            <tr>
+                <td>002°12,5'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">11</td>
+                <td>51°46,6'N</td>
+                <td rowspan="2">39,2°</td>
+                <td rowspan="2">25NM</td>
+            </tr>
+            <tr>
+                <td>002°38'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">12</td>
+                <td>52°10'N</td>
+                <td rowspan="2">003°</td>
+                <td rowspan="2">23,5NM</td>
+            </tr>
+            <tr>
+                <td>002°40'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">13</td>
+                <td>52°46.5'N</td>
+                <td rowspan="2">27,5°</td>
+                <td rowspan="2">41,5NM</td>
+            </tr>
+            <tr>
+                <td>003°11'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">14</td>
+                <td>52°54.5'N</td>
+                <td rowspan="2">35°</td>
+                <td rowspan="2">9,9NM</td>
+            </tr>
+            <tr>
+                <td>003°20.5'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">15</td>
+                <td>53°2.5'N</td>
+                <td rowspan="2">18°</td>
+                <td rowspan="2">8,4NM</td>
+            </tr>
+            <tr>
+                <td>003°24,8'E</td>
+            </tr>
+         
+            <tr>
+                <td rowspan="2">16</td>
+                <td>53°30'N</td>
+                <td rowspan="2">24,2°</td>
+                <td rowspan="2">30,3NM</td>
+            </tr>
+            <tr>
+                <td>003°45,5'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">17</td>
+                <td>53°45'N</td>
+                <td rowspan="2">53°</td>
+                <td rowspan="2">25NM</td>
+            </tr>
+            <tr>
+                <td>004°19'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">18</td>
+                <td>53°56,6'N</td>
+                <td rowspan="2">43°</td>
+                <td rowspan="2">15,9NM</td>
+            </tr>
+            <tr>
+                <td>004°37,3'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">19</td>
+                <td>53°56,6'N</td>
+                <td rowspan="2">43°</td>
+                <td rowspan="2">15,9NM</td>
+            </tr>
+            <tr>
+                <td>004°37,3'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">20</td>
+                <td>54°5'N</td>
+                <td rowspan="2">NORD</td>
+                <td rowspan="2">8,4NM</td>
+            </tr>
+            <tr>
+                <td>004°37,3'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">21</td>
+                <td>54°13'N</td>
+                <td rowspan="2">52,4°</td>
+                <td rowspan="2">13,1NM</td>
+            </tr>
+            <tr>
+                <td>004°55'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">22</td>
+                <td>56°35'N</td>
+                <td rowspan="2">14,6°</td>
+                <td rowspan="2">146,7NM</td>
+            </tr>
+            <tr>
+                <td>006°00'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">23</td>
+                <td>57°00'N</td>
+                <td rowspan="2">52,8°</td>
+                <td rowspan="2">41,5NM</td>
+            </tr>
+            <tr>
+                <td>007°00'E</td>
+            </tr>
+            <tr>
+                <td rowspan="2">24</td>
+                <td>57°40'N</td>
+                <td rowspan="2">58,2°</td>
+                <td rowspan="2">76NM</td>
+            </tr>
+            <tr>
+                <td>009°00'E</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">25</td>
+                <td>57°53,5'N</td>
+                <td rowspan="2">67,2,2°</td>
+                <td rowspan="2">35NM</td>
+            </tr>
+            <tr>
+                <td>010°00'E</td>
+            </tr>
+           
+            <tr>
+                <td rowspan="2">26</td>
+                <td>57°47,2'N</td>
+                <td rowspan="2">104°</td>
+                <td rowspan="2">25,6NM</td>
+            </tr>
+            <tr>
+                <td>010°46'E</td>
+            </tr>
+
+
+
+        </tbody>
+          </table>
+
+ 
+</div>

@@ -1,0 +1,83 @@
+header
+{
+    margin: 0;
+    padding: 0;
+    background-color:transparent;
+}
+
+.container nav {
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 1%;
+}
+.container nav span
+{   margin-right: 1%;
+    text-shadow: 5px 6px 5px rgba(62, 68, 237, 0.911);
+    color: rgba(255, 255, 255, 0.911) ;
+    font-style:oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: lighter;
+    margin-bottom: 12px;
+}
+.container nav ul {
+    list-style: none;
+    text-align: right;
+    margin-right: 40px;
+}
+.container nav ul li {
+    display: inline-block;
+    margin: 20px;
+    
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 17px;
+    text-shadow: 5px 4px 6px  rgba(58, 86, 178, 0.911);
+
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .container nav {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        justify-content: space-between; 
+        padding: 10px 0; 
+    }
+
+    .container nav ul {
+        list-style: none;
+        text-align: center; 
+        margin: 0;
+        padding: 0;
+    }
+
+    .container nav ul li {
+        display: block; 
+        margin: 10px 0; 
+    }
+
+    .container nav span {
+        margin-right: 0;
+        margin-bottom: 10px; 
+        text-align: center; 
+    }
+
+    .container nav ul li a {
+        font-size: 14px; 
+    }
+}
+

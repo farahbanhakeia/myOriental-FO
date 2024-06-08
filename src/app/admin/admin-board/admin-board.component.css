@@ -1,0 +1,61 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+
+/* Style pour les en-têtes de colonnes */
+.table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style pour les cellules */
+.table td {
+  padding: 10px;
+}
+
+/* Style pour les lignes impaires */
+.table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+.table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+body {
+  background-image: url('https://cdn.pixabay.com/photo/2016/05/24/16/48/ship-1417142_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Changer la police selon votre préférence */
+}
+.classPo{
+  margin: 20px auto; /* Centre le bouton horizontalement avec une marge de 20px en haut et en bas */
+  display: block;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.classPo:hover{
+  background-color: #218838;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

@@ -1,0 +1,28 @@
+<div class="google-map-container">
+  <div class="waypoint">
+    <label for="position" >Nombre de WayPoint:</label>
+    <input type="number" id="position" [(ngModel)]="position" (change)="updatePositions()">
+  </div>
+
+  <div *ngFor="let index of positionArray">
+    <div class="latitude">
+      <label for="latitude{{index}}">Latitude {{index + 1}} :</label>
+      <input placeholder="XX°YY'N/S || XX.YYYYY" type="text" id="latitude{{index}}" [(ngModel)]="positions[index].latitudeInput">
+    </div>
+    <div class="longitude">
+      <label for="longitude{{index}}">Longitude {{index + 1}} :</label>
+      <input placeholder="XX°YY'W/E || XX.YYYYY" type="text" id="longitude{{index}}" [(ngModel)]="positions[index].longitudeInput">
+    </div>
+  </div>
+
+  <div>
+    <button (click)="markPosition()">localiser sur la carte</button>
+    <button (click)="showCurrentPosition()">Ma Position</button>
+    <button (click)="generatePDF()">Générer PDF</button>
+  </div>
+
+  <google-map height="600px" width="1200px" [center]="mapCenter" [zoom]="zoom">
+    <map-marker *ngFor="let pos of positions" [position]="{lat: pos.latitude, lng: pos.longitude}"></map-marker>
+    <map-polyline *ngFor="let polyline of polylines" [path]="polyline.path" [options]="polyline.options"></map-polyline>
+  </google-map>
+</div>

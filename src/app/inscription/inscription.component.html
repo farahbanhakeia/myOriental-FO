@@ -1,0 +1,68 @@
+
+
+    <div class="total" >
+        <form  id="form" [formGroup]="signupForm" (ngSubmit)="loginUser()">
+            <h1> Inscription  </h1>
+            <div class="input-box">
+                <label for="nom"> firstname: </label>
+                <input type="text" id="firstname"  placeholder="Entrez votre nom:" formControlName="firstname" >
+                <br>
+                <span class="error-message" *ngIf="firstname && firstname.invalid && firstname.touched">Nom Is Not Invalible </span>
+
+            </div>
+            <div class="input-box">
+                <label for="prenom"> lastname: </label>
+                <input type="text" id="prenom"   placeholder="Entrez votre prénom:" formControlName="lastname">
+                <br>
+                <span class="error-message" *ngIf="lastname && lastname.invalid && lastname.touched">lastname Is Not Invalible </span>
+            </div>
+
+
+            <div class="input-box">
+                <label for="email"> Email: </label>
+                <input type="email" id="email"  placeholder="XXXXXXX@gmail.com" formControlName="email" >
+                <i class='bx bx-envelope'></i>
+                <br>
+                <span class="error-message" *ngIf="email &&email.invalid && email.touched">Mail Is Not Invalible </span>
+
+            </div>
+            <div class="input-box">
+                <label for="password"> Password: </label>
+                <input type="password" id="password" placeholder="Entrez votre mot de passe:" formControlName="password">
+                <i class='bx bxs-lock-alt'></i>
+                <br>
+                <span class="error-message" *ngIf="password &&password.invalid && password.touched">Password Is Not Invalible </span>
+
+            </div>
+            <div class="input-box">
+                <label for="password">Confirm Password: </label>
+                <input type="password"  id="password2"  placeholder="Confirmer Votre Mot de Passe:"  formControlName="password2">
+                <i class='bx bxs-lock-alt'></i>
+                <br>
+                <span class="error-message" *ngIf="password2 &&password2.invalid && password2.touched">the Password Are Differents</span>
+
+            </div>
+            <div class="birthday">
+                <label for="date_naissance">Date de Naissance:</label>
+                <input type="date" id="date_naissance" name="date_naissance" formControlName="date_naissance">
+            <br>
+            <span class="error-message" *ngIf="isYoung()">Vous Devez Avoir en Moins 20 ans </span>
+
+            </div>
+            <!--
+            <div class="conditionsystem">
+                <input type="checkbox"  formControlName="acceptCondition">
+                <label>
+                 J'accepte<a href="#">Les conditions d'utilisation</a>
+                </label>
+                <span class="error-message" *ngIf="acceptCondition &&acceptCondition.invalid &&(acceptCondition.dirty || acceptCondition.touched)">Acceptez les conditions d'utilisation</span>
+           </div>
+           -->
+          <button type="submit" class="btn"  >S'inscrire </button>
+            <span id="error" class="error-message"></span>
+          <div class="register-link">
+            <p> J'ai déja un compte <a routerLink="/register" routerLinkActive="active">Se Connecter </a></p>
+         </div>
+        </form>
+    </div>
+    <pre>{{ signupForm.value| json }}</pre>

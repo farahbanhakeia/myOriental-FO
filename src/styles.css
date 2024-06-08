@@ -1,0 +1,117 @@
+body
+{
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background: url(assets/images/ocean-3605547_1280.jpg)no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.acceuil-page-background
+{
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background: url(assets/images/beach-1852945_1280.jpg)no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.register-page-background {
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background: url(assets/images/image_boat.jpeg)no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.inscription-page-background
+{
+    margin: 0;
+    padding: 0;
+    background: url(assets/images/back_ground_image.jpeg)no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.service-page-background
+{
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background: url(assets/images/view.jpg)no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.gpsserv
+{
+    background-position: center;
+    margin: 0;
+   padding: 0;
+   background-size: cover;
+   background-attachment: fixed;
+   background: url(assets/images/boats-1802340_1280.jpg)no-repeat center center fixed;
+
+}
+.help-back
+{
+    background-position: center;
+    margin: 0;
+   padding: 0;
+   background-size: cover;
+   background-attachment: fixed;
+   background: url(assets/images/sea-6553205_1280.jpg)no-repeat center center fixed;
+
+}
+.meteosrv
+{
+    background-position: center;
+    margin: 0;
+    padding: 0;
+   background-size: cover;
+   background-attachment: fixed;
+   background: url(assets/images/seascape-sunset-art-desktop-wallpaper-preview.jpg)no-repeat center center fixed;
+
+}
+.articlesrv
+{
+    background-position: center;
+    margin: 0;
+    padding: 0;
+   background-size: cover;
+   background-attachment: fixed;
+   background: url(assets/images/blue.jpg)no-repeat center center fixed;
+}
+
+
+.voyagesrv
+{
+    background-position: center;
+    margin: 0;
+    padding: 0;
+   background-size: cover;
+   background-attachment: fixed;
+   background: url(assets/images/view2.jpg)no-repeat center center fixed;
+}
+.quizsrv
+{
+    background-position: center;
+    margin: 0;
+    padding: 0;
+   background-size: cover;
+   background-attachment: fixed;
+   background: url(assets/images/background.jpg)no-repeat center center fixed;
+}
+
+.admin-board
+{
+  background-image: url(assets/admin-back.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Changer la police selon votre préférence */
+}
