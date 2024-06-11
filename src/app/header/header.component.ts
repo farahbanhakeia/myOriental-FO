@@ -1,6 +1,7 @@
-import { Component, inject } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { AuthService } from '../_services/authService/auth.service';
 import { Router } from '@angular/router';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 
 @Component({
@@ -8,16 +9,17 @@ import { Router } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 
   authService = inject(AuthService);
   router = inject(Router);
-  isLoggedIn = false;
+  isLogged = false;
+  constructor(private autheservice: AuthService){}
 
-  constructor(private autheservice: AuthService){
-    //
-    this.isLoggedIn = this.autheservice.islogged;
-    console.log("islogged headers", this.isLoggedIn);
+  ngOnInit() {
+    this.authService.isLogged$.subscribe(isLogged => {
+      this.isLogged = isLogged;
+    });
   }
 
   public logout(){

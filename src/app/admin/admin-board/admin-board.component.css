@@ -59,3 +59,51 @@ body {
   align-items: center;
 }
 
+.btn{
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+.update-btn {
+  background-color: #4CAF50; /* Vert */
+}
+
+.update-btn:hover {
+  background-color: #45a049; /* Vert plus sombre */
+}
+
+/* Bouton Delete */
+.delete-btn {
+  background-color: #f44336; /* Rouge */
+}
+
+.delete-btn:hover {
+  background-color: #da190b; /* Rouge plus sombre */
+}
+
+add-button{
+  border: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 0; /* Supprime le padding par défaut */
+  margin: 5px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Fait du bouton un cercle */
+    color: white;
+    font-size: 24px; /* Taille du texte du symbole plus */
+    width: 50px; /* Largeur du bouton */
+    height: 50px; /* Hauteur du bouton */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-user-btn {
+  background-color: #2196F3; /* Bleu */
+}
+
+.add-user-btn:hover {
+  background-color: #1976D2; /* Bleu plus sombre */
+}

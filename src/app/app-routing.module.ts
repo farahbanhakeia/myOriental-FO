@@ -15,6 +15,7 @@ import { authGuard } from './_services/authService/auth.guard';
 import { LoginComponent } from './login/login.component';
 import { AdminBoardComponent } from './admin/admin-board/admin-board.component';
 import { adminGuard } from './admin/admin.guard';
+import { LoginFailedComponent } from './login-failed/login-failed.component';
 
 const routes: Routes =
 [
@@ -30,6 +31,7 @@ const routes: Routes =
     {path:'meteo',component: WeatherinfoComponent},
     {path:'login',component: LoginComponent},
     {path:'admin',component: AdminBoardComponent, canActivate: [adminGuard]},
+    {path:'failedlogin', component: LoginFailedComponent},
 
     {path:'**',component:ErrorComponent}
 

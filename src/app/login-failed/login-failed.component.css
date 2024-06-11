@@ -1,0 +1,50 @@
+.login-failed-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff3f3;
+  border: 1px solid #ff4d4d;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.error-icon {
+  font-size: 48px;
+  color: #ff4d4d;
+  margin-bottom: 10px;
+}
+
+.error-message h2 {
+  font-size: 24px;
+  color: #d8000c;
+  margin-bottom: 10px;
+}
+
+.error-message p {
+  font-size: 16px;
+  color: #d8000c;
+}
+
+@media (max-width: 600px) {
+  .login-failed-container {
+    padding: 10px;
+    max-width: 90%;
+  }
+
+  .error-icon {
+    font-size: 36px;
+  }
+
+  .error-message h2 {
+    font-size: 20px;
+  }
+
+  .error-message p {
+    font-size: 14px;
+  }
+}

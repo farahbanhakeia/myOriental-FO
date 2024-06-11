@@ -24,7 +24,7 @@
                  </label>
                  <a href="#">Forget  password?</a>
            </div>
-           <button type="submit" class="btn">Sing in</button>
+           <button type="submit" class="btn" [disabled]="!loginForm.valid">Sing in</button>
            <div class="register-link">
               <p> Don't have an account? <a routerLink="/register" routerLinkActive="active"  >s'inscrire</a></p>
 

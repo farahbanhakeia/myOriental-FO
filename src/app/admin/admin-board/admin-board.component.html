@@ -1,5 +1,7 @@
 <div class="container">
   <h2>Admin Board</h2>
+  <button class="btn add-user-btn">Add User +</button>
+  <br>
 </div>
 <div>
   <table class="table">
@@ -9,6 +11,8 @@
         <th>Nom</th>
         <th>Email</th>
         <th>Date de naissance</th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -17,9 +21,12 @@
         <td>{{ u.firstName }} {{ u.lastName }}</td>
         <td>{{ u.email }}</td>
         <td>{{ u.date_naissance | date:'dd/MM/yyyy' }}</td>
+        <td><button class="btn update-btn">Update</button></td>
+        <td><button class="btn delete-btn">Delete</button></td>
+
       </tr>
     </tbody>
   </table>
 
 </div>
-<button class=" classPo" (click)="getAllUsers()">Je suis Admin</button>
+<button class=" classPo" (click)="getAllUsers()">Get All Users</button>

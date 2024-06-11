@@ -20,6 +20,9 @@ import { QuizComponent } from './quiz/quiz.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { LoginComponent } from './login/login.component';
 import { AdminBoardComponent } from './admin/admin-board/admin-board.component';
+import { LoginFailedComponent } from './login-failed/login-failed.component';
+import { NotAllowedComponent } from './not-allowed/not-allowed.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +39,10 @@ import { AdminBoardComponent } from './admin/admin-board/admin-board.component';
     VoyagepresComponent,
     QuizComponent,
     LoginComponent,
-    AdminBoardComponent
+    AdminBoardComponent,
+    LoginFailedComponent,
+    NotAllowedComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

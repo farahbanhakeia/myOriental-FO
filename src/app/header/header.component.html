@@ -20,15 +20,14 @@
                     <i class='bx bx-help-circle'></i>
                 </a>
                 </li>
-                <li><a routerLink="register" routerLinkActive="active">
+                <li *ngIf="!isLogged"><a routerLink="register" routerLinkActive="active">
                     <i class='bx bxs-log-in'></i>
                     Register
                     <i class='bx bxs-log-out'></i>
                 </a>
                 </li>
-                <li *ngIf="!isLoggedIn">
-                  <button (click)="logout()">logout</button>
-
+                <li *ngIf="isLogged">
+                  <button (click)="logout()">logout {{isLogged}}</button>
               </li>
             </ul>
             </nav>
