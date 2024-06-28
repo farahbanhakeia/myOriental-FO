@@ -23,12 +23,12 @@
                 <li><a routerLink="register" routerLinkActive="active">
                     <i class='bx bxs-log-in'></i>
                     Register
-                    <i class='bx bxs-log-out'></i>
+                  
                 </a>
                 </li>
                 <li *ngIf="!isLoggedIn">
-                  <button (click)="logout()">logout</button>
-
+                    <a  (click)="logout()">Logout
+                  <i class='bx bxs-log-out'></i></a>
               </li>
             </ul>
             </nav>
