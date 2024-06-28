@@ -18,12 +18,13 @@ import { adminGuard } from './admin/admin.guard';
 
 const routes: Routes =
 [
-    {path: '', redirectTo: '/login', pathMatch: 'full'},
+    {path: '', redirectTo: '/acceil', pathMatch: 'full'},
     {path:'',component:AcceuilComponent},
+    {path:'acceil',component:AcceuilComponent},
     {path:'register',component:InscriptionComponent},
-    {path: 'service',component:ServicesComponent, canActivate: [authGuard]},
+    {path: 'service',component:ServicesComponent},
     {path:'help',component:HelpMeComponent},
-    {path:'gps',component:GpsComponent},
+    {path:'gps',component:GpsComponent  , canActivate: [authGuard]}, //  , canActivate: [authGuard] ceci veux  dir que gps doit etre authentifier soit par admin ou user 
     {path:'article' ,component:ArticleComponent},
     {path:'quiz' ,component:QuizComponent},
     {path:'voyage',component:VoyagepresComponent},
